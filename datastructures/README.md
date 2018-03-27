@@ -1,1 +1,1 @@
-Simple implementation of singly-linked list in python
+Simple implementation of singly-linked list in python.
