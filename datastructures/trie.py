@@ -1,3 +1,5 @@
+#This is a simple trie implementation that assumes the alphabet used to consist of letters only.
+
 class Node:
     def __init__(self, val):
         self.val = val
