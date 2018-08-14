@@ -1,3 +1,6 @@
+'''Solution to the random note problem from hackerrank.com.
+This function checks whether words that appear in the note list also appear in the magazine list.'''
+
 def checkMagazine(magazine, note):
     hash1 = dict()
     for word in magazine:
@@ -11,5 +14,3 @@ def checkMagazine(magazine, note):
         else:
             hash1[word] -= 1
     return "Yes"
-
-print(checkMagazine(["give","me","one","grand","today", "tonight"], ["give","one","today"]))
