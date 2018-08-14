@@ -1,3 +1,6 @@
+'''Solution to the Sherlock Anagram problem from hackerrank.com
+This function finds all pairs of anagram subsets of a given string s.'''
+
 def getSubsets(s):
     hash1 = dict()
     list1 = list()
