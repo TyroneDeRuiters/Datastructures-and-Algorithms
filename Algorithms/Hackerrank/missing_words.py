@@ -1,3 +1,6 @@
+'''
+O(n) solution to the missing words prroblem from Hackerrank.com.
+'''
 
 def missingWords(s, t):
     s = s.strip()
