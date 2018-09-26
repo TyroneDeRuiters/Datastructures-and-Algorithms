@@ -1,18 +1,17 @@
+'''
+O(n) solution to get minimum unique sum problem from Hackerrank.com.
+'''
 def getMinimumUniqueSum(arr):
-    stack = list()
     arr.sort()
-    print(arr)
     for i in range(len(arr)):
-        if(len(stack) == 0):
-            stack.append(arr[i])
+        if(i == 0):
+            prev = arr[i]
         else:
-            top = stack[len(stack) - 1]
-            if(top > arr[i]):
-                arr[i] = top
-            if(top == arr[i]):
+            if(prev > arr[i]):
+                arr[i] = prev
+            if(prev == arr[i]):
                 arr[i] += 1
-            stack.append(arr[i])
-    print(stack)
-    return sum(stack)
+            prev = arr[i]
+    return sum(arr)
 
 print(getMinimumUniqueSum([1,2,2]))
